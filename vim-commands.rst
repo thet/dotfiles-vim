@@ -44,6 +44,10 @@ https://pypi.org/project/pyflakes/
 https://pypi.org/project/docformatter/
 
 
+https://github.com/garbas/vim-snipmate
+https://marketplace.visualstudio.com/items?itemName=Derico.plone-vs-snippets
+https://marketplace.visualstudio.com/items?itemName=derekdavenport.vscode-plonefs
+
 
 Set/check filetype
 ------------------
