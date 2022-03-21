@@ -193,10 +193,10 @@ set updatetime=300
 """"""""""""""
 " Enable true color support
 set termguicolors
-colorscheme PaperColor
+"colorscheme PaperColor
 set background=dark
 " set background=light
-
+colorscheme dracula
 
 "" GUI
 if has('gui_running')

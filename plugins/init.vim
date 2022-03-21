@@ -52,6 +52,8 @@ Plug 'sudar/vim-arduino-syntax'  " https://github.com/sudar/vim-arduino-syntax
 
 "" COLORSCHEME
 """"""""""""""
+
+Plug 'dracula/vim', { 'as': 'dracula' }  " https://draculatheme.com/vim
 Plug 'endel/vim-github-colorscheme'  " https://github.com/endel/vim-github-colorscheme
 Plug 'NLKNguyen/papercolor-theme'  " https://github.com/NLKNguyen/papercolor-theme
 
