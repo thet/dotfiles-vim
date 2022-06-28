@@ -67,6 +67,7 @@ source $HOME/.vim/plugins/gitgutter.vim
 source $HOME/.vim/plugins/grepper.vim
 source $HOME/.vim/plugins/incsearch.vim
 source $HOME/.vim/plugins/matchtagalways.vim
+source $HOME/.vim/plugins/minimap.vim
 source $HOME/.vim/plugins/open-browser.vim
 source $HOME/.vim/plugins/ranger.vim
 source $HOME/.vim/plugins/rfc-syntax.vim
