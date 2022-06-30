@@ -232,9 +232,6 @@ noremap <leader>k vap:s/\([\.\?!;]\) \+/\1\r/e<CR>
 " show full path to file
 noremap <leader>% :echo expand('%:p')<CR>
 
-"" Autoformat
-noremap <leader>g :%!jscs -x<CR>
-
 "" CLEANUP FILE
 " - FileType Unix,
 " - Tabs to spaces,
