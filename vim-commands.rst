@@ -65,9 +65,18 @@ check variable
     set VARIABLENAME?
 
 
+Check mapping of <cr>
+---------------------
+::
+
+    :verbose imap <cr>
+
+
 Coc
 ---
 https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions
+
+:h coc-completion
 
 :CocConfig
 :CocUpdate
