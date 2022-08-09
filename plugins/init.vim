@@ -46,6 +46,10 @@ Plug 'chr4/nginx.vim', {'for': 'nginx'}  " https://github.com/chr4/nginx.vim
 Plug 'pld-linux/vim-syntax-vcl'  " https://github.com/pld-linux/vim-syntax-vcl
 Plug 'sudar/vim-arduino-syntax'  " https://github.com/sudar/vim-arduino-syntax
 
+
+Plug 'alunny/pegjs-vim'  " https://github.com/alunny/pegjs-vim
+                         " https://github.com/gf3/peg.vim/blob/master/syntax/peg.vim
+
 "Plug 'powerman/vim-plugin-ansiesc'  " https://github.com/powerman/vim-plugin-ansiesc
 "Plug 'christoomey/vim-system-copy'  " https://github.com/christoomey/vim-system-copy
 
