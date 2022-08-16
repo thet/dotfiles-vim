@@ -79,7 +79,7 @@ source $HOME/.vim/plugins/snippets.vim
 source $HOME/.vim/plugins/tagbar.vim
 source $HOME/.vim/plugins/undotree.vim
 source $HOME/.vim/plugins/vem-tabline.vim
-" source $HOME/.vim/plugins/context.vim
+source $HOME/.vim/plugins/context.vim
 
 " only when gui mode
 if has('gui_running')
