@@ -63,6 +63,7 @@ Plug 'NLKNguyen/papercolor-theme'  " https://github.com/NLKNguyen/papercolor-the
 
 " source $HOME/.vim/plugins/buffergator.vim
 source $HOME/.vim/plugins/coc.vim
+source $HOME/.vim/plugins/copilot.vim
 source $HOME/.vim/plugins/filebeagle.vim
 source $HOME/.vim/plugins/fugitive.vim
 source $HOME/.vim/plugins/fzf.vim
