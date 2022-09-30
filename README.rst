@@ -20,37 +20,75 @@ Have a look into ./extras for system wide node and python tools and a script for
 Language Server Integration
 ---------------------------
 
-In your buildour.cfg, set::
+Have some node packages installed. An example ``package.json``, but I'm not sure yet, if everything is needed or if I forgot something::
 
-  [buildout]
-  parts =
-    pyls
-
-  [pyls]
-  recipe = zc.recipe.egg
-  eggs =
-      ${robot:eggs}
-      python-language-server
-      pyls-black
-      pyls-isort
-      autopep8
-      mccabe
-      pycodestyle
-      pydocstyle
-      pyflakes
-      pylint
-      rope
-      yapf
-
-In your vim config, set (for LanguageClient-neovim)::
-
-    let g:LanguageClient_serverCommands = {
-      \ 'python': ['/PATH/TO/YOUR/BUILDOUT/bin/pyls'],
-    \ }
+    {
+      "name": "npm-tools",
+      "version": "1.0.0",
+      "dependencies": {
+        "@prettier/plugin-xml": "^2.2.0",
+        "bash-language-server": "3.1.0",
+        "dockerfile-language-server-nodejs": "0.9.0",
+        "eslint": "8.24.0",
+        "javascript-typescript-langserver": "*",
+        "neovim": "4.10.1",
+        "prettier": "2.7.1",
+        "stylelint": "14.13.0",
+        "stylelint-processor-styled-components": "*",
+        "tslint": "*",
+        "typescript": "4.8.4",
+        "vscode-css-languageserver-bin": "*",
+        "vscode-html-languageserver-bin": "*",
+        "vscode-json-languageserver-bin": "*",
+        "vue-language-server": "*"
+      },
+    }
 
 
-Add the local ./bin directory to the PATH - this way pyls is found if you start nvim in the buildout-root directory::
-  export PATH=./bin:$PATH
+Add your node_modules bin directory to the PATH::
+
+  export PATH=PATH/TO/node_modules/.bin:$PATH
+
+
+Have some python packages installed::
+
+    python -m venv .
+    bin/pip install -r requirements.txt
+
+Where `requirements.txt` is something like::
+
+    bandit  # https://github.com/PyCQA/bandit
+    black
+    docformatter
+    isort < 5
+    pep8
+    pylint
+    pynvim
+
+    ### FLAKE8
+    flake8
+    # flake8 5.0.4 dependencies
+    mccabe>=0.7.0,<0.8.0
+    pycodestyle>=2.9.0,<2.10.0
+    pyflakes>=2.5.0,<2.6.0
+    #pycodestyle
+    #pyflakes
+    #mccabe
+
+    ### PYTHON LANGUAGE SERVER
+    jedi-language-server
+    jedi
+
+
+Add your virtual env's ./bin directory to the PATH - this way pyls is found if you start nvim in the buildout-root directory::
+
+  export PATH=PATH/TO/bin:$PATH
+
+
+In your vim config, set these (See ``init.vim``)::
+
+    let g:python3_host_prog = 'PATH/TO/bin/python'
+    let g:node_host_prog = 'PATH/TO/node_modules/.bin/neovim-node-host'
 
 
 Collaborative editing
