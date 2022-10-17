@@ -1,3 +1,6 @@
+" Disable: :CocDisable
+" Enable: :CocEnable
+
 " https://github.com/neoclide/coc.nvim
 " https://code.visualstudio.com/docs/python/settings-reference
 " https://code.visualstudio.com/docs/python/python-tutorial
