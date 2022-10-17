@@ -8,3 +8,9 @@ Plug 'junegunn/limelight.vim'  " http://github.com/junegunn/limelight.vim
 "" Set limelight on Goyo
 autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
+
+
+" KEYMAP
+""""""""
+nmap <leader>g :Goyo<CR>
+xmap <leader>g :Goyo<CR>
