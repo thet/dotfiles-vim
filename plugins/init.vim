@@ -81,6 +81,7 @@ source $HOME/.vim/plugins/tagbar.vim
 source $HOME/.vim/plugins/undotree.vim
 source $HOME/.vim/plugins/vem-tabline.vim
 source $HOME/.vim/plugins/context.vim
+source $HOME/.vim/plugins/limelight.vim
 " source $HOME/.vim/plugins/treesitter.vim
 
 " only when gui mode
