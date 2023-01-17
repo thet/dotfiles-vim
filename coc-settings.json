@@ -1,6 +1,6 @@
 {
   "coc.preferences.extensionUpdateCheck": "daily",
-  "coc.preferences.rootPatterns": [".vim", ".git", ".hg", ".projections.json"],
+  "workspace.rootPatterns": [".vim", ".git", ".hg", ".projections.json"],
   "diagnostic.refreshOnInsertMode": true,
   "coc.preferences.formatOnSaveFiletypes": [
     "python",
@@ -82,7 +82,6 @@
   "xml.format.splitAttributes": true,
   "xml.format.joinContentLines": true,
   // float config
-  "suggest.floatEnable": true,
   "diagnostic.messageTarget": "float",
   "signature.target": "float"
   //"coc.preferences.hoverTarget": "float"
