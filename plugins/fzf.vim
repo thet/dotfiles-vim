@@ -12,7 +12,7 @@ let g:fzf_layout = { 'window': 'enew' }
 
 function! FZFfiles()
     call fzf#run({
-    \   'source': 'ag  -filU -g "" --ignore ./var --ignore ./develop-eggs --ignore *.py?',
+    \   'source': 'ag  -filU --ignore ./var --ignore ./develop-eggs --ignore *.py? -g ""',
     \   'sink':    'e',
     \   'options': '-m',
     \ })
