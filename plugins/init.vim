@@ -33,6 +33,7 @@ Plug 'posva/vim-vue', {'for': ['javascript.vue']}  " https://github.com/posva/vi
 " Plug 'mxw/vim-jsx', {'for': ['javascript', 'javascript.jsx']}  " https://github.com/mxw/vim-jsx
 Plug 'peitalin/vim-jsx-typescript', {'for': ['javascript.jsx', 'javascript.tsx']}  " https://github.com/peitalin/vim-jsx-typescript
 Plug 'leafgarland/typescript-vim', {'for': ['typescript', 'typescript.tsx']}  " https://github.com/leafgarland/typescript-vim
+Plug 'mustache/vim-mustache-handlebars'  " https://github.com/mustache/vim-mustache-handlebars
 
 Plug 'othree/html5.vim', {'for': ['html', 'xhtml']}  " https://github.com/othree/html5.vim
 Plug 'ap/vim-css-color', {'for': ['css', 'less', 'scss', 'sass']}  " https://github.com/ap/vim-css-color
