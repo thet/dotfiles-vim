@@ -13,6 +13,10 @@
     "javascript.vue",
     "javascript.jsx"
   ],
+
+  // autocompletion
+  "suggest.enablePreselect": false,
+  "suggest.noselect": true,
   "suggest.timeout": 15000,
 
   // Python

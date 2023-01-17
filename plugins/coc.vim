@@ -98,7 +98,7 @@ inoremap <silent><expr> <c-space> coc#refresh()
 
 
 " Use <cr> to confirm completion.
-inoremap <expr> <cr> coc#pum#visible() ? coc#_select_confirm() : "\<CR>"
+inoremap <expr> <cr> coc#pum#visible() && coc#pum#info()['index'] >= 0 ? coc#_select_confirm() : "\<CR>"
 
 
 " Use `[g` and `]g` to navigate diagnostics
