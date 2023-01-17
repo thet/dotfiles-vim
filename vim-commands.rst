@@ -49,6 +49,14 @@ https://marketplace.visualstudio.com/items?itemName=Derico.plone-vs-snippets
 https://marketplace.visualstudio.com/items?itemName=derekdavenport.vscode-plonefs
 
 
+
+Motions
+-------
+::
+
+    cw ... change word
+
+
 Set/check filetype
 ------------------
 ::
@@ -85,6 +93,9 @@ https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions
 :CocUninstall EXTENSION
 
 :CocList extensions
+then use <tab> to see options
+
+:CocInfo
 
 
 Word count
@@ -272,6 +283,13 @@ https://stackoverflow.com/questions/4737099/multiple-search-and-replace-in-one-l
 
 
 :%s/SEARCH/REPLACE/e
+
+
+delete lines matching
+---------------------
+delete empty lines::
+
+    :g/^$/d
 
 retab
 -----
