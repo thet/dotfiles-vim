@@ -1,4 +1,4 @@
-Plug 'Valloric/MatchTagAlways', {'for': 'html'}  " https://github.com/Valloric/MatchTagAlways
+Plug 'Valloric/MatchTagAlways', {'for': ['html', 'xhtml', 'xml']}  " https://github.com/Valloric/MatchTagAlways
 
 
 " CONFIG
