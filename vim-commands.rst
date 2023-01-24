@@ -49,6 +49,20 @@ https://marketplace.visualstudio.com/items?itemName=Derico.plone-vs-snippets
 https://marketplace.visualstudio.com/items?itemName=derekdavenport.vscode-plonefs
 
 
+Insert word under cursor into command line
+------------------------------------------
+https://stackoverflow.com/questions/48642/how-do-i-specify-the-word-under-the-cursor-on-vims-commandline
+::
+
+    :nmap <leader>w :s/\(<c-r>=expand("<cword>")<cr>\)/
+
+or while in command-line mode hit: `<C-r><C-w>`
+
+
+
+
+
+
 
 Motions
 -------
