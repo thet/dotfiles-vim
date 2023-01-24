@@ -13,7 +13,7 @@ let g:grepper.rg = {'grepprg': 'rg -H --no-heading --vimgrep --smart-case --foll
 " KEYMAP
 """"""""
 
-nnoremap <BSlash> :Grepper -query<space>
-nnoremap <C-BSlash> :Grepper -query --no-ignore-vcs<space>
-nnoremap \| :Grepper -buffers -query<space>
-nnoremap <leader><Bslash> :Grepper -buffer -query<space>
+nnoremap <BSlash> :Grepper -query <c-r>=expand("<cword>")<cr><space>
+nnoremap <C-BSlash> :Grepper -query --no-ignore-vcs <c-r>=expand("<cword>")<cr><space>
+nnoremap \| :Grepper -buffers -query <c-r>=expand("<cword>")<cr><space>
+nnoremap <leader><Bslash> :Grepper -buffer -query <c-r>=expand("<cword>")<cr><space>
