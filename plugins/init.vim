@@ -71,6 +71,7 @@ source $HOME/.vim/plugins/fzf.vim
 source $HOME/.vim/plugins/git-messenger.vim
 source $HOME/.vim/plugins/gitgutter.vim
 source $HOME/.vim/plugins/grepper.vim
+source $HOME/.vim/plugins/qf.vim
 source $HOME/.vim/plugins/incsearch.vim
 source $HOME/.vim/plugins/matchtagalways.vim
 source $HOME/.vim/plugins/minimap.vim
