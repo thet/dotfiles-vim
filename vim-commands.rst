@@ -49,6 +49,21 @@ https://marketplace.visualstudio.com/items?itemName=Derico.plone-vs-snippets
 https://marketplace.visualstudio.com/items?itemName=derekdavenport.vscode-plonefs
 
 
+GREP Plugins
+https://vimawesome.com/plugin/vim-grepper
+https://github.com/mhinz/vim-grepper
+
+https://vimawesome.com/plugin/ack-vim
+https://github.com/mileszs/ack.vim#can-i-use-ag-the-silver-searcher-with-this
+
+https://vimdoc.sourceforge.net/htmldoc/options.html#'grepprg'
+https://vimdoc.sourceforge.net/htmldoc/quickfix.html#:grep
+https://vimdoc.sourceforge.net/htmldoc/motion.html#word-motions
+
+vim-qf—short for vim-quickfix
+https://github.com/romainl/vim-qf
+
+
 Insert word under cursor into command line
 ------------------------------------------
 https://stackoverflow.com/questions/48642/how-do-i-specify-the-word-under-the-cursor-on-vims-commandline
