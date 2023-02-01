@@ -5,11 +5,9 @@
 #   mkdir -p .vscode; ./bin/zopepy ../vscoder.py > .vscode/settings.json
 #   mkdir -p .vim; cd .vim; ln -s ../.vscode/settings.json coc-settings.json; cd ..
 
-from json import dumps
-
 import os
 import sys
-
+from json import dumps
 
 CONF = {
     "files.associations": {"*.zcml": "xml"},

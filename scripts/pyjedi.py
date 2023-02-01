@@ -4,11 +4,8 @@
 # Or:
 #   mkdir -p .vim; ./bin/zopepy ../pyjedi.py > .vim/coc-settings.json
 
-from json import dumps
-
-import os
 import sys
-
+from json import dumps
 
 CONF = {
     "jedi.workspace.extraPaths": sorted(filter(None, set(sys.path))),
@@ -27,7 +24,7 @@ CONF = {
         "parts",
         "var",
         "venv",
-    ]
+    ],
 }
 
 print(dumps(CONF, indent=2))
