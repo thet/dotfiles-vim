@@ -64,6 +64,23 @@ vim-qf—short for vim-quickfix
 https://github.com/romainl/vim-qf
 
 
+
+hex edit
+--------
+https://vi.stackexchange.com/a/2234/6303
+::
+
+    :%!xxd
+
+after making changes, back to normal text::
+
+    :%!xxd -r
+
+Synatx highlight::
+
+    :set ft=xxd
+
+
 Insert word under cursor into command line
 ------------------------------------------
 https://stackoverflow.com/questions/48642/how-do-i-specify-the-word-under-the-cursor-on-vims-commandline
