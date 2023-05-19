@@ -111,6 +111,13 @@ Set/check filetype
     set filetype=html
     set ft=html
 
+list filetypes
+--------------
+https://vi.stackexchange.com/a/5782/6303
+::
+
+    :setfiletype <CTRL-D>
+
 
 check variable
 --------------
