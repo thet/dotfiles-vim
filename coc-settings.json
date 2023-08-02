@@ -57,6 +57,7 @@
   },
   "diagnostic-languageserver.formatFiletypes": {
     "python": ["black", "isort", "docformatter"]
+    //"python": ["black", "isort"]
   },
   "diagnostic-languageserver.formatters": {
     "black": {
@@ -70,6 +71,7 @@
     "docformatter": {
       "command": "docformatter",
       "args": ["-"]
+      // "args": ["--black", "-"]
     }
   },
 
@@ -87,7 +89,8 @@
   "xml.format.joinContentLines": true,
   // float config
   "diagnostic.messageTarget": "float",
-  "signature.target": "float"
+  "signature.target": "float",
+  "snippets.ultisnips.pythonPrompt": false
   //"coc.preferences.hoverTarget": "float"
   // floating window disable
   //"suggest.floatEnable": false,
