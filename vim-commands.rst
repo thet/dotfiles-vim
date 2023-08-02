@@ -141,6 +141,7 @@ https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions
 
 :CocConfig
 :CocUpdate
+:CocReload
 
 :CocInstall EXTENSION[@VERSION]
 :CocUninstall EXTENSION
