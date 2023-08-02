@@ -54,6 +54,8 @@ Plug 'alunny/pegjs-vim'  " https://github.com/alunny/pegjs-vim
 "Plug 'powerman/vim-plugin-ansiesc'  " https://github.com/powerman/vim-plugin-ansiesc
 "Plug 'christoomey/vim-system-copy'  " https://github.com/christoomey/vim-system-copy
 
+Plug 'evanleck/vim-svelte'  " https://github.com/evanleck/vim-svelte
+
 
 "" COLORSCHEME
 """"""""""""""
