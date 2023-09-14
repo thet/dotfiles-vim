@@ -72,7 +72,6 @@ source $HOME/.vim/plugins/fugitive.vim
 source $HOME/.vim/plugins/fzf.vim
 source $HOME/.vim/plugins/git-messenger.vim
 source $HOME/.vim/plugins/gitgutter.vim
-source $HOME/.vim/plugins/grepper.vim
 source $HOME/.vim/plugins/qf.vim
 source $HOME/.vim/plugins/incsearch.vim
 source $HOME/.vim/plugins/matchtagalways.vim
@@ -86,7 +85,8 @@ source $HOME/.vim/plugins/undotree.vim
 source $HOME/.vim/plugins/vem-tabline.vim
 source $HOME/.vim/plugins/context.vim
 source $HOME/.vim/plugins/limelight.vim
-" source $HOME/.vim/plugins/treesitter.vim
+"source $HOME/.vim/plugins/treesitter.vim
+"source $HOME/.vim/plugins/grepper.vim
 
 " only when gui mode
 if has('gui_running')

@@ -62,6 +62,10 @@ noremap <leader>. :GFiles<CR>
 noremap <leader>, :Buffers<CR>
 noremap <leader>c :Colors<CR>
 noremap <leader>l :History<CR>
-noremap <leader>' :Lines<CR>
+
+" All open buffers
+nnoremap <BSlash> :Lines<CR>
+" Whole project
+nnoremap <leader><Bslash> :Rg<CR>
 
 "
