@@ -17,6 +17,36 @@ Then::
 Have a look into ./extras for system wide node and python tools and a script for generating a .vscode configuration for Plone projects.
 
 
+using fzf
+----------
+Install:
+
+https://github.com/junegunn/fzf
+https://github.com/junegunn/fzf.vim
+https://github.com/sharkdp/fd
+
+Add to your `.bashrc` or similar::
+
+    # FZF
+    [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+    # https://github.com/junegunn/fzf#environment-variables
+    export FZF_DEFAULT_COMMAND="fdfind --type f"
+
+Now, fzf uses fdfind. fdfind respects a `.gitignore` and does not include
+ignored files and directories in it's result set. with a multi-project
+repository where the project-build-root has a gitignore excluding all other
+repositories (like a typical Plone buildout project), you might not find what
+you want. Therefore, add a `.ignore` which excludes some of the git-ignored
+directories, like so::
+
+    !/src
+    !/src/*
+    !/parts
+    !/parts/*
+    !/parts/omelette
+    !/parts/omelette/*
+
+
 Language Server Integration
 ---------------------------
 
