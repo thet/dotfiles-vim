@@ -28,7 +28,7 @@ Plug 'tpope/vim-sleuth'  " https://github.com/tpope/vim-sleuth
 Plug 'editorconfig/editorconfig-vim'  " https://github.com/editorconfig/editorconfig-vim
 Plug 'gorkunov/smartpairs.vim'  " https://github.com/gorkunov/smartpairs.vim
 
-Plug 'pangloss/vim-javascript', {'for': ['javascript', 'javascript.jsx', 'javascript.vue']}  " https://github.com/pangloss/vim-javascript
+Plug 'pangloss/vim-javascript', {'for': ['javascript', 'javascript.jsx',]}  " https://github.com/pangloss/vim-javascript
 Plug 'posva/vim-vue', {'for': ['javascript.vue']}  " https://github.com/posva/vim-vue
 " Plug 'mxw/vim-jsx', {'for': ['javascript', 'javascript.jsx']}  " https://github.com/mxw/vim-jsx
 Plug 'peitalin/vim-jsx-typescript', {'for': ['javascript.jsx', 'javascript.tsx']}  " https://github.com/peitalin/vim-jsx-typescript

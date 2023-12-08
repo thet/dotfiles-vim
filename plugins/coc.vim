@@ -14,7 +14,7 @@
 " https://github.com/neoclide/coc-lists
 " https://github.com/neoclide/coc-python
 " https://github.com/neoclide/coc-snippets
-" https://github.com/neoclide/coc-tserver
+" https://github.com/neoclide/coc-tsserver
 " https://github.com/neoclide/coc-vetur
 " https://github.com/neoclide/coc-yaml
 " https://github.com/neoclide/coc-yank

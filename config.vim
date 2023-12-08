@@ -132,7 +132,7 @@ autocmd BufRead,BufNewFile *.tex,*.txt,*.rst setlocal wrap textwidth=0 wrapmargi
 autocmd BufRead,BufNewFile *.php setlocal tabstop=4 shiftwidth=4 softtabstop=0
 
 autocmd BufRead,BufNewFile *.robot set filetype=robot syntax=robot
-autocmd BufRead,BufNewFile *.vue set filetype=javascript.vue syntax=javascript
+autocmd BufRead,BufNewFile *.vue set filetype=javascript.vue
 autocmd BufRead,BufNewFile *.jsx set filetype=javascript.jsx syntax=javascript
 autocmd BufRead,BufNewFile *.tsx set filetype=typescript.tsx syntax=typescript
 autocmd BufRead,BufNewFile *.xml,*.zcml,*.svg set filetype=xml
