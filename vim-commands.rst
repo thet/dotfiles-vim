@@ -64,6 +64,40 @@ vim-qf—short for vim-quickfix
 https://github.com/romainl/vim-qf
 
 
+sort for blocks
+https://superuser.com/a/752821/404355
+::
+
+    :g/def/,/end/s/\n/§
+    :%sort
+    :g/def/s/§/\r
+
+
+::
+
+    :g/<utility/,/\/>/s/\n/§
+    :%sort
+    :g/<utility/s/§/\r
+
+
+::
+
+    :'<,'>g/@staticmethod/,/return.*$/s/\n/§
+
+    :'<,'>g/@property/,/return.*$/s/\n/§
+    :g/@property/s/§/\r
+
+
+    :'<,'>g/def/,/return/s/\n/§
+    :g/def/s/§/\r
+
+
+vim command history
+---
+::
+
+    q:
+
 
 hex edit
 --------
