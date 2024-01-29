@@ -103,7 +103,7 @@ else
 endif
 
 
-" copy filename to clipboard
+" copy filename/path to clipboard
 " http://vim.wikia.com/wiki/Copy_filename_to_clipboard
 noremap ,cs :let @+=expand("%")<CR>
 noremap ,cl :let @+=expand("%:p")<CR>
