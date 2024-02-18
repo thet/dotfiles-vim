@@ -64,6 +64,39 @@ vim-qf—short for vim-quickfix
 https://github.com/romainl/vim-qf
 
 
+
+
+insert current search pattern into text
+---
+https://stackoverflow.com/a/27970127/1337474
+In insert-mode, press simultanously::
+
+    <ctrl-r>/
+
+which is::
+
+    <ctrl-r>{register}
+
+help on registers::
+
+    :h registers
+
+
+There are these types of registers::
+
+    There are ten types of registers:
+    1. The unnamed register ""
+    2. 10 numbered registers "0 to "9
+    3. The small delete register "-
+    4. 26 named registers "a to "z or "A to "Z
+    5. Three read-only registers ":, "., "%
+    6. Alternate buffer register "#
+    7. The expression register "=
+    8. The selection registers "* and "+
+    9. The black hole register "_
+    10. Last search pattern register "/
+
+
 sort for blocks
 https://superuser.com/a/752821/404355
 ::
