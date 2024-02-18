@@ -65,6 +65,18 @@ https://github.com/romainl/vim-qf
 
 
 
+Reload the current vimrc without restarting
+---
+https://superuser.com/a/132030/404355
+::
+
+    :so $MYVIMRC
+
+
+Reload the current file::
+
+    :so %
+
 
 insert current search pattern into text
 ---
