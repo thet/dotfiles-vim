@@ -16,6 +16,12 @@ vmap U <Nop>
 command -nargs=1 S2 :2match search /<args>/
 command -nargs=1 S3 :3match search /<args>/
 
+" ⚡
+" Extend the current search with another pattern
+" https://stackoverflow.com/a/9261629/1337474
+nnoremap <silent> + :let @/ .= '\\|\<'.expand('<cword>').'\>'<cr>n
+" Extend also to visual mode.
+"vnoremap <silent> + <c-\><c-n>:let @/ .= '\\|'.escape(lh#visual#selection(), '/\^$*.[~')<cr>n
 
 "" KEY MAPPINGS
 """""""""""""""
