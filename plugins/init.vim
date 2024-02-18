@@ -12,6 +12,9 @@ let g:plug_url_format = 'git@github.com:%s.git'
 Plug 'tpope/vim-sensible'  " https://github.com/tpope/vim-sensible
 Plug 'moll/vim-bbye'  " https://github.com/moll/vim-bbye
 
+" Use `<leader>ww` in both windows to swap
+Plug 'wesQ3/vim-windowswap'  " https://github.com/wesQ3/vim-windowswap
+
 
 "" GIT, ETC
 """""""""""
