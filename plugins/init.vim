@@ -67,7 +67,6 @@ Plug 'dracula/vim', { 'as': 'dracula' }  " https://draculatheme.com/vim
 Plug 'endel/vim-github-colorscheme'  " https://github.com/endel/vim-github-colorscheme
 Plug 'NLKNguyen/papercolor-theme'  " https://github.com/NLKNguyen/papercolor-theme
 
-" source $HOME/.vim/plugins/buffergator.vim
 source $HOME/.vim/plugins/coc.vim
 source $HOME/.vim/plugins/copilot.vim
 source $HOME/.vim/plugins/filebeagle.vim
