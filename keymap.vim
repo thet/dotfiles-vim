@@ -19,7 +19,9 @@ command -nargs=1 S3 :3match search /<args>/
 " ⚡
 " Extend the current search with another pattern
 " https://stackoverflow.com/a/9261629/1337474
-nnoremap <silent> + :let @/ .= '\\|\<'.expand('<cword>').'\>'<cr>n
+" https://graz.social/@thet/111953000899093970
+" https://hachyderm.io/@SmileyKeith/111965047954342554
+nnoremap <silent> + :let @/ .= '\\|\<'.expand('<cword>').'\>'<cr>:call histadd('search', @/)<cr>n
 " Extend also to visual mode.
 "vnoremap <silent> + <c-\><c-n>:let @/ .= '\\|'.escape(lh#visual#selection(), '/\^$*.[~')<cr>n
 

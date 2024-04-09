@@ -64,6 +64,25 @@ vim-qf—short for vim-quickfix
 https://github.com/romainl/vim-qf
 
 
+remove duplicate lines
+---
+::
+
+    :%!uniq
+
+
+tab management
+---
+
+close a tab::
+
+    :tabc
+    :tabclose
+
+    :help tabpage
+    :help buffer-hidden
+
+
 
 Reload the current vimrc without restarting
 ---
@@ -76,6 +95,28 @@ https://superuser.com/a/132030/404355
 Reload the current file::
 
     :so %
+
+
+
+Search history
+---
+::
+
+    /<UP>
+
+
+Extend the current search with another pattern
+---
+https://stackoverflow.com/a/9261629/1337474
+https://graz.social/@thet/111953000899093970
+https://hachyderm.io/@SmileyKeith/111965047954342554
+::
+
+    nnoremap <silent> + :let @/ .= '\\|\<'.expand('<cword>').'\>'<cr>:call histadd('search', @/)<cr>n
+
+Extend also to visual mode::
+
+    vnoremap <silent> + <c-\><c-n>:let @/ .= '\\|'.escape(lh#visual#selection(), '/\^$*.[~')<cr>n
 
 
 insert current search pattern into text
