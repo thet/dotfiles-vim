@@ -87,7 +87,6 @@ source $HOME/.vim/plugins/vem-tabline.vim
 source $HOME/.vim/plugins/context.vim
 source $HOME/.vim/plugins/limelight.vim
 "source $HOME/.vim/plugins/treesitter.vim
-"source $HOME/.vim/plugins/grepper.vim
 
 " only when gui mode
 if has('gui_running')
