@@ -64,6 +64,23 @@ vim-qf—short for vim-quickfix
 https://github.com/romainl/vim-qf
 
 
+
+search/replace with substitution
+----
+https://vi.stackexchange.com/a/25547/6303
+https://graz.social/@thet/112440091318622087
+::
+
+    :%s/SEARCH(.*)STRING/REPLACE\1STRING/gc
+
+`()` ... GROUP
+`\1` ... SUBSTITUTION
+
+e.g.::
+
+    :%s/component={\(.*\)}/element={<\1\/>}/gc
+
+
 remove duplicate lines
 ---
 ::
