@@ -75,40 +75,16 @@ nnoremap <Del> "_x
 nnoremap ; y:<C-r>"<C-b>
 vnoremap ; y:<C-r>"<C-b>
 
+
 "" clipboard copy/paste
-
-" See: https://github.com/neovim/neovim/issues/583
-function! ClipboardYank()
-    if !empty($WAYLAND_DISPLAY)
-        call system('wl-copy -n --type text/plain', @@)
-    else
-        call system('xclip -i -selection clipboard', @@)
-    endif
-endfunction
-function! ClipboardPaste()
-    if !empty($WAYLAND_DISPLAY)
-        let @@ = system('wl-paste -n | tr -d "\r"')
-    else
-        let @@ = system('xclip -o -selection clipboard')
-    endif
-endfunction
-
-
-if has('gui_running')
-    " copy selection or line
-    noremap 1 "+yy
-    " paste before
-    noremap 2 "+p
-    " paste after
-    noremap @ "+P
-    " delete
-    noremap 3 "+d
-else
-    noremap 1 yy:call ClipboardYank()<CR>
-    noremap 2 :call ClipboardPaste()<CR>p
-    noremap @ :call ClipboardPaste()<CR>P
-    noremap 3 dd:call ClipboardYank()<CR>
-endif
+" copy selection or line
+noremap 1 "+yy
+" paste before
+noremap 2 "+p
+" paste after
+noremap @ "+P
+" delete
+noremap 3 "+d
 
 
 " copy filename/path to clipboard
