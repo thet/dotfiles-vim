@@ -62,31 +62,6 @@ set completeopt+=noselect  " Highlight the first completion automatically
 match ErrorMsg '\%>80v.+'
 
 
-"" CLIPBOARD
-" https://github.com/neovim/neovim/issues/10223#issuecomment-521952122
-" https://github.com/neovim/neovim/issues/10223#issuecomment-663004365
-" https://github.com/neovim/neovim/issues/10223#issuecomment-676721570
-" https://gitlab.gnome.org/GNOME/gtk/-/issues/2307
-if exists('$WAYLAND_DISPLAY')
-  " Wayland clipboard provider that strips carriage returns (GTK3 issue).
-  " This is needed because currently there's an issue where GTK3 applications on
-  " Wayland contain carriage returns at the end of the lines (this is a root
-  " issue that needs to be fixed).
-  let g:clipboard = {
-        \   'name': 'wayland-strip-carriage',
-        \   'copy': {
-        \      '+': 'wl-copy --foreground --type text/plain',
-        \      '*': 'wl-copy --foreground --type text/plain --primary',
-        \    },
-        \   'paste': {
-        \      '+': {-> systemlist('wl-paste --no-newline | sed -e "s/\r$//"', '', 1)},
-        \      '*': {-> systemlist('wl-paste --no-newline --primary | sed -e "s/\r$//"', '', 1)},
-        \   },
-        \   'cache_enabled': 1,
-        \ }
-endif
-
-
 "" SEARCH
 """""""""
 set gdefault  " Automatically search all occurrences within a line. Do not use /g in - that will toggle that switch.
