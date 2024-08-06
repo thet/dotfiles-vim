@@ -1,5 +1,4 @@
 if has('nvim')
-    let g:python_host_prog = '~/dev/python-tools2/venv/bin/python'
     let g:python3_host_prog = '~/dev/python-tools/venv/bin/python'
     let g:node_host_prog = '~/node_modules/.bin/neovim-node-host'
     let g:loaded_ruby_provider = 0
