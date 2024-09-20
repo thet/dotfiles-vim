@@ -7,6 +7,7 @@ let g:copilot_filetypes = {
       \ 'html': v:true,
       \ 'javascript': v:true,
       \ 'javascript.jsx': v:true,
+      \ 'javascript.tsx': v:true,
       \ 'javascript.vue': v:true,
       \ 'json': v:true,
       \ 'less': v:true,
@@ -16,5 +17,6 @@ let g:copilot_filetypes = {
       \ 'scss': v:true,
       \ 'varnish': v:true,
       \ 'vim': v:true,
+      \ 'yaml': v:true,
       \ 'xml': v:true,
       \ }
