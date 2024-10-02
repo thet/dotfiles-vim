@@ -19,4 +19,5 @@ let g:copilot_filetypes = {
       \ 'vim': v:true,
       \ 'yaml': v:true,
       \ 'xml': v:true,
+      \ 'xhtml': v:true,
       \ }
