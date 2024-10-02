@@ -237,4 +237,4 @@ noremap gz :!zeal --query "<cword>"&<CR><CR>
 
 " toggle invisible characters
 noremap <leader>p :set list!<CR>
-" map <silent> <leader>l :set number!<CR>
+noremap <leader>l :set number!<CR>
