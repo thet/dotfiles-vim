@@ -42,6 +42,11 @@ set cursorline
 set colorcolumn=80
 set so=4  " Set a margin of lines when scrolling
 
+"" Show trailing whitespace
+"" See: https://stackoverflow.com/a/62612904/1337474
+""      https://askubuntu.com/a/74503/219661
+set listchars=eol:$,tab:▸\ ,trail:~,extends:>,precedes:<
+
 set lazyredraw   " dont redraw while vim is busy
 set wildmode=list:longest
 set formatoptions=qrnl

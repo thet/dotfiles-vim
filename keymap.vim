@@ -235,6 +235,6 @@ noremap <leader>t :setlocal expandtab<CR>:call Preserve("%s/\\s\\+$//e")<CR>:cal
 noremap gz :!zeal --query "<cword>"&<CR><CR>
 
 
-" noremap <leader>p :set list!<CR>
+" toggle invisible characters
+noremap <leader>p :set list!<CR>
 " map <silent> <leader>l :set number!<CR>
-
