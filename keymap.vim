@@ -205,6 +205,9 @@ noremap <leader>i :Isort<CR>
 
 "" reformat - strip whitespace
 noremap <leader>s :call Preserve("%s/\\s\\+$//e")<CR>
+"" See: https://stackoverflow.com/a/62612904/1337474
+"noremap <leader>s :%s/\s\+$//
+
 "" reformat - wrap text
 noremap <leader>w gqip
 "" reformat - join text
