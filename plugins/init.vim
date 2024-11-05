@@ -25,7 +25,6 @@ Plug 'tpope/vim-rhubarb'  " https://github.com/tpope/vim-rhubarb
 
 " Against indentation annoyances
 Plug 'tpope/vim-sleuth'  " https://github.com/tpope/vim-sleuth
-Plug 'editorconfig/editorconfig-vim'  " https://github.com/editorconfig/editorconfig-vim
 Plug 'gorkunov/smartpairs.vim'  " https://github.com/gorkunov/smartpairs.vim
 
 
