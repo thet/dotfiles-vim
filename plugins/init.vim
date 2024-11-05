@@ -51,26 +51,26 @@ Plug 'endel/vim-github-colorscheme'  " https://github.com/endel/vim-github-color
 Plug 'NLKNguyen/papercolor-theme'  " https://github.com/NLKNguyen/papercolor-theme
 
 
-" source $HOME/.vim/plugins/coc.vim
+"source $HOME/.vim/plugins/coc.vim
+"source $HOME/.vim/plugins/context.vim
 source $HOME/.vim/plugins/copilot.vim
 source $HOME/.vim/plugins/filebeagle.vim
 source $HOME/.vim/plugins/fugitive.vim
 source $HOME/.vim/plugins/fzf.vim
 source $HOME/.vim/plugins/git-messenger.vim
 source $HOME/.vim/plugins/gitgutter.vim
+source $HOME/.vim/plugins/limelight.vim
 source $HOME/.vim/plugins/lsp.vim
-source $HOME/.vim/plugins/qf.vim
 source $HOME/.vim/plugins/matchtagalways.vim
 source $HOME/.vim/plugins/minimap.vim
 source $HOME/.vim/plugins/open-browser.vim
+source $HOME/.vim/plugins/qf.vim
 source $HOME/.vim/plugins/ranger.vim
 source $HOME/.vim/plugins/snippets.vim
 source $HOME/.vim/plugins/tagbar.vim
+source $HOME/.vim/plugins/treesitter.vim
 source $HOME/.vim/plugins/undotree.vim
 source $HOME/.vim/plugins/vem-tabline.vim
-"source $HOME/.vim/plugins/context.vim
-source $HOME/.vim/plugins/limelight.vim
-source $HOME/.vim/plugins/treesitter.vim
 
 " only when gui mode
 if has('gui_running')
