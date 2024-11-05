@@ -50,13 +50,15 @@ Plug 'dracula/vim', { 'as': 'dracula' }  " https://draculatheme.com/vim
 Plug 'endel/vim-github-colorscheme'  " https://github.com/endel/vim-github-colorscheme
 Plug 'NLKNguyen/papercolor-theme'  " https://github.com/NLKNguyen/papercolor-theme
 
-source $HOME/.vim/plugins/coc.vim
+
+" source $HOME/.vim/plugins/coc.vim
 source $HOME/.vim/plugins/copilot.vim
 source $HOME/.vim/plugins/filebeagle.vim
 source $HOME/.vim/plugins/fugitive.vim
 source $HOME/.vim/plugins/fzf.vim
 source $HOME/.vim/plugins/git-messenger.vim
 source $HOME/.vim/plugins/gitgutter.vim
+source $HOME/.vim/plugins/lsp.vim
 source $HOME/.vim/plugins/qf.vim
 source $HOME/.vim/plugins/matchtagalways.vim
 source $HOME/.vim/plugins/minimap.vim
@@ -83,3 +85,6 @@ call plug#end()
 " See: https://github.com/nvim-treesitter/nvim-treesitter/issues/914#issuecomment-773670349
 source $HOME/.vim/plugins/treesitter.lua
 source $HOME/.vim/plugins/treesitter-context.lua
+
+" LSP config
+source $HOME/.vim/plugins/lsp.lua
