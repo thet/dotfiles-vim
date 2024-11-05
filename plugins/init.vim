@@ -23,41 +23,24 @@ Plug 'tpope/vim-rhubarb'  " https://github.com/tpope/vim-rhubarb
 " Plug 'cohama/agit.vim'  " https://github.com/cohama/agit.vim
 
 
-"" SYNTAXN
-""""""""""
-
 " Against indentation annoyances
 Plug 'tpope/vim-sleuth'  " https://github.com/tpope/vim-sleuth
 Plug 'editorconfig/editorconfig-vim'  " https://github.com/editorconfig/editorconfig-vim
 Plug 'gorkunov/smartpairs.vim'  " https://github.com/gorkunov/smartpairs.vim
 
-Plug 'pangloss/vim-javascript', {'for': ['javascript', 'javascript.jsx',]}  " https://github.com/pangloss/vim-javascript
-Plug 'posva/vim-vue', {'for': ['javascript.vue']}  " https://github.com/posva/vim-vue
-" Plug 'mxw/vim-jsx', {'for': ['javascript', 'javascript.jsx']}  " https://github.com/mxw/vim-jsx
-Plug 'peitalin/vim-jsx-typescript', {'for': ['javascript.jsx', 'javascript.tsx']}  " https://github.com/peitalin/vim-jsx-typescript
-Plug 'leafgarland/typescript-vim', {'for': ['typescript', 'typescript.tsx']}  " https://github.com/leafgarland/typescript-vim
-Plug 'mustache/vim-mustache-handlebars'  " https://github.com/mustache/vim-mustache-handlebars
 
-Plug 'othree/html5.vim', {'for': ['html', 'xhtml']}  " https://github.com/othree/html5.vim
-Plug 'ap/vim-css-color', {'for': ['css', 'less', 'scss', 'sass']}  " https://github.com/ap/vim-css-color
-Plug 'hail2u/vim-css3-syntax', {'for': ['css', 'less', 'scss', 'sass']}  " https://github.com/hail2u/vim-css3-syntax
-Plug 'cakebaker/scss-syntax.vim', {'for': ['scss', 'sass']}  " https://github.com/cakebaker/scss-syntax.vim
-Plug 'groenewege/vim-less', {'for': 'less'}  " https://github.com/groenewege/vim-less
+"" SYNTAXN
+""""""""""
+"" NOTE: All syntax managed by treesitter, except for some.
+""       Maybe the following come in handy sometime.
 
-Plug 'plasticboy/vim-markdown', {'for': 'markdown'}  " https://github.com/plasticboy/vim-markdown
-Plug 'mfukar/robotframework-vim', {'for': 'robot'}  " https://github.com/mfukar/robotframework-vim
-Plug 'chr4/nginx.vim', {'for': 'nginx'}  " https://github.com/chr4/nginx.vim
-Plug 'pld-linux/vim-syntax-vcl', {'for': 'varnish'}  " https://github.com/pld-linux/vim-syntax-vcl
-Plug 'sudar/vim-arduino-syntax'  " https://github.com/sudar/vim-arduino-syntax
-
-
-Plug 'alunny/pegjs-vim'  " https://github.com/alunny/pegjs-vim
-                         " https://github.com/gf3/peg.vim/blob/master/syntax/peg.vim
-
-"Plug 'powerman/vim-plugin-ansiesc'  " https://github.com/powerman/vim-plugin-ansiesc
-"Plug 'christoomey/vim-system-copy'  " https://github.com/christoomey/vim-system-copy
-
-Plug 'evanleck/vim-svelte'  " https://github.com/evanleck/vim-svelte
+"Plug 'peitalin/vim-jsx-typescript', {'for': ['javascript.jsx', 'javascript.tsx']}  " https://github.com/peitalin/vim-jsx-typescript
+"Plug 'mustache/vim-mustache-handlebars'  " https://github.com/mustache/vim-mustache-handlebars
+"Plug 'groenewege/vim-less', {'for': 'less'}  " https://github.com/groenewege/vim-less
+"Plug 'pld-linux/vim-syntax-vcl', {'for': 'varnish'}  " https://github.com/pld-linux/vim-syntax-vcl
+"Plug 'alunny/pegjs-vim'  " https://github.com/alunny/pegjs-vim
+                          " https://github.com/gf3/peg.vim/blob/master/syntax/peg.vim
+"source $HOME/.vim/plugins/rfc-syntax.vim
 
 
 "" COLORSCHEME
@@ -79,14 +62,13 @@ source $HOME/.vim/plugins/matchtagalways.vim
 source $HOME/.vim/plugins/minimap.vim
 source $HOME/.vim/plugins/open-browser.vim
 source $HOME/.vim/plugins/ranger.vim
-source $HOME/.vim/plugins/rfc-syntax.vim
 source $HOME/.vim/plugins/snippets.vim
 source $HOME/.vim/plugins/tagbar.vim
 source $HOME/.vim/plugins/undotree.vim
 source $HOME/.vim/plugins/vem-tabline.vim
-source $HOME/.vim/plugins/context.vim
+"source $HOME/.vim/plugins/context.vim
 source $HOME/.vim/plugins/limelight.vim
-"source $HOME/.vim/plugins/treesitter.vim
+source $HOME/.vim/plugins/treesitter.vim
 
 " only when gui mode
 if has('gui_running')
@@ -96,3 +78,8 @@ endif
 
 " Add plugins to &runtimepath
 call plug#end()
+
+" tree-sitter needs to be configured after calling plug#end()
+" See: https://github.com/nvim-treesitter/nvim-treesitter/issues/914#issuecomment-773670349
+source $HOME/.vim/plugins/treesitter.lua
+source $HOME/.vim/plugins/treesitter-context.lua
