@@ -104,34 +104,37 @@ set cindent  " C-Style indent. better than smartindent, as it doesn't move comme
 set foldmethod=indent
 set foldlevelstart=20  " set foldlevel higher so opened buffers arent folded
 
-autocmd BufRead,BufNewFile *.html,*.pt,*.xml,*.zcml,*.svg setlocal tabstop=2 shiftwidth=2 softtabstop=0
-autocmd BufRead,BufNewFile *.json setlocal tabstop=2 shiftwidth=2 softtabstop=0 foldmethod=indent  " foldmethod=syntax
-autocmd BufRead,BufNewFile *.js,*.jsx,*.vue setlocal tabstop=4 shiftwidth=4 softtabstop=0 foldmethod=indent  " foldmethod=syntax
-autocmd BufRead,BufNewFile *.css setlocal tabstop=2 shiftwidth=2 softtabstop=0
-autocmd BufRead,BufNewFile *.robot setlocal tabstop=2 shiftwidth=2 softtabstop=0
-autocmd BufRead,BufNewFile *.tex,*.txt,*.rst setlocal wrap textwidth=0 wrapmargin=0  " only use semantic linebreaks in text files.
-autocmd BufRead,BufNewFile *.php setlocal tabstop=4 shiftwidth=4 softtabstop=0
+autocmd BufRead,BufNewFile *.zcml set filetype=xml
+autocmd BufRead,BufNewFile *.pt,*.cpt,*.zpt set filetype=xhtml syntax=html
 
-autocmd BufRead,BufNewFile *.robot set filetype=robot syntax=robot
-autocmd BufRead,BufNewFile *.vue set filetype=javascript.vue
-autocmd BufRead,BufNewFile *.jsx set filetype=javascript.jsx syntax=javascript
-autocmd BufRead,BufNewFile *.tsx set filetype=typescript.tsx syntax=typescript
-autocmd BufRead,BufNewFile *.xml,*.zcml,*.svg set filetype=xml
+"autocmd BufRead,BufNewFile *.html,*.pt,*.xml,*.zcml,*.svg setlocal tabstop=2 shiftwidth=2 softtabstop=0
+"autocmd BufRead,BufNewFile *.json setlocal tabstop=2 shiftwidth=2 softtabstop=0 foldmethod=indent  " foldmethod=syntax
+"autocmd BufRead,BufNewFile *.js,*.jsx,*.vue setlocal tabstop=4 shiftwidth=4 softtabstop=0 foldmethod=indent  " foldmethod=syntax
+"autocmd BufRead,BufNewFile *.css setlocal tabstop=2 shiftwidth=2 softtabstop=0
+"autocmd BufRead,BufNewFile *.robot setlocal tabstop=2 shiftwidth=2 softtabstop=0
+"autocmd BufRead,BufNewFile *.tex,*.txt,*.rst setlocal wrap textwidth=0 wrapmargin=0  " only use semantic linebreaks in text files.
+"autocmd BufRead,BufNewFile *.php setlocal tabstop=4 shiftwidth=4 softtabstop=0
+
+"autocmd BufRead,BufNewFile *.robot set filetype=robot syntax=robot
+"autocmd BufRead,BufNewFile *.vue set filetype=javascript.vue
+"autocmd BufRead,BufNewFile *.jsx set filetype=javascript.jsx syntax=javascript
+"autocmd BufRead,BufNewFile *.tsx set filetype=typescript.tsx syntax=typescript
+"autocmd BufRead,BufNewFile *.xml,*.zcml,*.svg set filetype=xml
 "" autocmd BufRead,BufNewFile *.pt,*.cpt,*.zpt set filetype=zpt syntax=xml
-autocmd BufRead,BufNewFile *.pt,*.cpt,*.zpt set filetype=xhtml syntax=xhtml
-autocmd BufRead,BufNewFile **/nginx/** set filetype=nginx
-autocmd BufRead,BufNewFile *.scss set filetype=scss syntax=scss
-autocmd BufRead,BufNewFile *.less set filetype=less syntax=less
-autocmd BufRead,BufNewFile *.css set filetype=css syntax=css
-autocmd BufReadPost,BufNewFile *.md set filetype=markdown  " https://github.com/tpope/vim-markdown
-autocmd BufReadPost,BufNewFile *.vcl set filetype=varnish
+"autocmd BufRead,BufNewFile *.pt,*.cpt,*.zpt set filetype=xhtml syntax=xhtml
+"autocmd BufRead,BufNewFile **/nginx/** set filetype=nginx
+"autocmd BufRead,BufNewFile *.scss set filetype=scss syntax=scss
+"autocmd BufRead,BufNewFile *.less set filetype=less syntax=less
+"autocmd BufRead,BufNewFile *.css set filetype=css syntax=css
+"autocmd BufReadPost,BufNewFile *.md set filetype=markdown  " https://github.com/tpope/vim-markdown
+"autocmd BufReadPost,BufNewFile *.vcl set filetype=varnish
 
 " autocmd BufWritePre *.pt execute ':%!zpretty'
 " autocmd BufWritePre *.zcml execute ':%!zpretty --zcml'
 " autocmd BufWritePre *.xml execute ':%!zpretty --xml'
 
 " jsonc comment highlighting
-autocmd FileType json syntax match Comment +\/\/.\+$+
+"autocmd FileType json syntax match Comment +\/\/.\+$+
 
 " Open some binaries with external tools
 autocmd BufReadCmd *.pdf silent !xdg-open % &

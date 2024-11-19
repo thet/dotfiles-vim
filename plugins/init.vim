@@ -48,7 +48,7 @@ Plug 'gorkunov/smartpairs.vim'  " https://github.com/gorkunov/smartpairs.vim
 Plug 'dracula/vim', { 'as': 'dracula' }  " https://draculatheme.com/vim
 Plug 'endel/vim-github-colorscheme'  " https://github.com/endel/vim-github-colorscheme
 Plug 'NLKNguyen/papercolor-theme'  " https://github.com/NLKNguyen/papercolor-theme
-
+Plug 'folke/tokyonight.nvim'  " https://github.com/folke/tokyonight.nvim
 
 "source $HOME/.vim/plugins/coc.vim
 "source $HOME/.vim/plugins/context.vim

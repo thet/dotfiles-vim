@@ -1,6 +1,17 @@
 Extensions
 ----------
 
+
+Language Servers
+http://www.lazyvim.org/extras/lang/tailwind
+https://github.com/tailwindlabs/tailwindcss-intellisense/
+
+https://github.com/j-hui/fidget.nvim
+https://github.com/folke/lazydev.nvim
+
+https://github.com/junegunn/vim-plug
+https://github.com/folke/lazy.nvim
+
 https://github.com/nvim-telescope/telescope.nvim/wiki/Showcase
 
 https://github.com/neoclide/coc.nvim
