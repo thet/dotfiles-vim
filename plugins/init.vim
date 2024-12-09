@@ -84,10 +84,10 @@ call plug#end()
 if has('nvim')
     " tree-sitter needs to be configured after calling plug#end()
     " See: https://github.com/nvim-treesitter/nvim-treesitter/issues/914#issuecomment-773670349
-    lua require('plugins.treesitter')
-    lua require('plugins.treesitter-context')
+    source $HOME/.vim/plugins/treesitter.lua
+    source $HOME/.vim/plugins/treesitter-context.lua
 
     " LSP config
-    lua require('plugins.lsp')
-    lua require('plugins.lsp-completion')
+    source $HOME/.vim/plugins/lsp.lua
+    source $HOME/.vim/plugins/lsp-completion.lua
 endif

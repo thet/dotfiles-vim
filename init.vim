@@ -2,7 +2,7 @@ if has('nvim')
     let g:python3_host_prog = '~/dev/python-tools/venv/bin/python'
     let g:node_host_prog = '~/node_modules/.bin/neovim-node-host'
     let g:loaded_ruby_provider = 0
-    lua require('config')
+    source $HOME/.vim/config.lua
 endif
 
 highlight TabLineSel     guibg=Green guifg=Blue
