@@ -30,6 +30,9 @@ require('mason-lspconfig').setup({
 --})
 
 
+require("lsp_lines").setup()
+
+
 -- See: https://blog.inkdrop.app/my-neovim-setup-for-react-typescript-tailwind-css-etc-in-2022-a7405862c9a4
 local status, nvim_lsp = pcall(require, "lspconfig")
 if (not status) then return end
