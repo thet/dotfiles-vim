@@ -89,4 +89,5 @@ if has('nvim')
 
     " LSP config
     lua require('plugins.lsp')
+    lua require('plugins.lsp-completion')
 endif
