@@ -96,12 +96,12 @@ null_ls.setup({
         --null_ls.builtins.diagnostics.markdownlint,
         --null_ls.builtins.diagnostics.mypy,
         --null_ls.builtins.diagnostics.pylint,
-        null_ls.builtins.diagnostics.rstcheck,
+        --null_ls.builtins.diagnostics.rstcheck,
         --null_ls.builtins.diagnostics.sqlfluff.with({
         --    extra_args = { "--dialect", "postgres" }, -- change to your dialect
         --}),
         null_ls.builtins.diagnostics.stylelint,
-        null_ls.builtins.diagnostics.tidy,
+        --null_ls.builtins.diagnostics.tidy,
         -- Formatters
         null_ls.builtins.formatting.black,
         --null_ls.builtins.formatting.codespell,
