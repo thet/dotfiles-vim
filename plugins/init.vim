@@ -90,4 +90,5 @@ if has('nvim')
     " LSP config
     source $HOME/.vim/plugins/lsp.lua
     source $HOME/.vim/plugins/lsp-completion.lua
+    source $HOME/.vim/plugins/lsp-none.lua
 endif
