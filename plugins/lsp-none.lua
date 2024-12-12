@@ -35,6 +35,8 @@ null_ls.setup({
         --null_ls.builtins.formatting.styler,                 -- R
         -- none-ls-extras
         require("none-ls.diagnostics.eslint"),              -- JavaScript
-        require("none-ls.diagnostics.ruff"),              -- Python
+
+        -- Redundant
+        --require("none-ls.diagnostics.ruff"),              -- Python
     }
 })
