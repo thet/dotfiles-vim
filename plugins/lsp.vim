@@ -24,7 +24,6 @@ Plug 'hrsh7th/vim-vsnip'
 Plug 'nvim-lua/plenary.nvim'  " https://github.com/nvim-lua/plenary.nvim
 Plug 'nvimtools/none-ls.nvim'  " https://github.com/nvimtools/none-ls.nvim
 Plug 'nvimtools/none-ls-extras.nvim'  " https://github.com/nvimtools/none-ls-extras.nvim
-Plug 'MunifTanjim/prettier.nvim'  " https://github.com/MunifTanjim/prettier.nvim
 
 
 " LSP warnings, etc
