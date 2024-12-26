@@ -30,7 +30,7 @@ require('mason-lspconfig').setup({
 --})
 
 
-require("lsp_lines").setup()
+--require("lsp_lines").setup()
 
 
 -- See: https://blog.inkdrop.app/my-neovim-setup-for-react-typescript-tailwind-css-etc-in-2022-a7405862c9a4
@@ -75,3 +75,17 @@ nvim_lsp.ruff.setup {
     }
   }
 }
+
+-- shot diagnostic infos
+vim.diagnostic.config({
+    signs = true,
+    virtual_text = false,
+    float = {
+        show_header = true,
+        source = 'always',
+        border = 'rounded',
+        focusable = false,
+    },
+    update_in_insert = true, -- default to false
+    severity_sort = true, -- default to false
+})

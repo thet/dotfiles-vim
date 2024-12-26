@@ -2,6 +2,19 @@
 --      https://github.com/nvimtools/none-ls-extras.nvim/
 local null_ls = require("null-ls")
 null_ls.setup({
+    update_in_insert = true,
+    debounce = 1000,
+    default_timeout = 5000,
+    diagnostic_config = {
+        signs = true,
+        virtual_text = false,
+        float = {
+            show_header = true,
+            source = 'always',
+            border = 'rounded',
+            focusable = false,
+        },
+    },
     sources = {
         -- linters
         --null_ls.builtins.diagnostics.actionlint,            -- GitHub actions
@@ -19,7 +32,7 @@ null_ls.setup({
         null_ls.builtins.diagnostics.rstcheck,              -- ReStructured Text
         --null_ls.builtins.diagnostics.sqruff,                -- SQL
         null_ls.builtins.diagnostics.stylelint,             -- CSS, LESS, SASS
-        null_ls.builtins.diagnostics.tidy,                  -- HTML
+        --null_ls.builtins.diagnostics.tidy,                  -- HTML
         null_ls.builtins.diagnostics.vint,                  -- VIM
         null_ls.builtins.diagnostics.yamllint,              -- YAML
         -- Formatters

@@ -26,9 +26,10 @@ Plug 'nvimtools/none-ls.nvim'  " https://github.com/nvimtools/none-ls.nvim
 Plug 'nvimtools/none-ls-extras.nvim'  " https://github.com/nvimtools/none-ls-extras.nvim
 
 
-" LSP warnings, etc
-Plug 'Maan2003/lsp_lines.nvim'  " https://github.com/Maan2003/lsp_lines.nvim https://git.sr.ht/~whynothugo/lsp_lines.nvim
+"" LSP warnings, etc
+"Plug 'Maan2003/lsp_lines.nvim'  " https://github.com/Maan2003/lsp_lines.nvim https://git.sr.ht/~whynothugo/lsp_lines.nvim
 
+Plug 'folke/trouble.nvim'  " https://github.com/folke/trouble.nvim
 
 " Keybindings
 noremap <leader>f :luado vim.lsp.buf.format()<CR>
