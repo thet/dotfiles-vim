@@ -13,6 +13,7 @@ let g:copilot_filetypes = {
       \ 'json': v:true,
       \ 'less': v:true,
       \ 'nginx': v:true,
+      \ 'markdown': v:true,
       \ 'python': v:true,
       \ 'robot': v:true,
       \ 'scss': v:true,
