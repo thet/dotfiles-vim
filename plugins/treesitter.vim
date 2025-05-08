@@ -5,5 +5,5 @@
 " https://github.com/tree-sitter/tree-sitter/blob/master/cli/README.md
 " https://github.com/nvim-treesitter/nvim-treesitter
 " https://github.com/nvim-treesitter/nvim-treesitter-context
-Plug 'nvim-treesitter/nvim-treesitter', { 'tag': 'v0.9.3', 'do': ':TSUpdate'}  " https://github.com/nvim-treesitter/nvim-treesitter
+Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate'}  " https://github.com/nvim-treesitter/nvim-treesitter
 Plug 'nvim-treesitter/nvim-treesitter-context'  " https://github.com/nvim-treesitter/nvim-treesitter-context
