@@ -15,7 +15,6 @@ set showmode
 set showcmd  " Display an incomplete command in the lower right corner of the Vim window
 set hidden  " allow for switching buffers when a file has changes
 set t_vb=  " make sure the bell shuts up
-set pastetoggle=<F2>
 set number       " turn on line numbers¬
 
 " performance improvements

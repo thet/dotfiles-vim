@@ -16,4 +16,8 @@ source $HOME/.vim/plugins/init.vim
 source $HOME/.vim/config.vim
 source $HOME/.vim/statusline.vim
 source $HOME/.vim/gpg.vim
+
+if !has('nvim')
+    source $HOME/.vim/vim-compatibility.vim
+endif
 " end
