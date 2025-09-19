@@ -75,6 +75,15 @@ vim-qf—short for vim-quickfix
 https://github.com/romainl/vim-qf
 
 
+jump to column
+----
+https://vi.stackexchange.com/a/12850/6303
+::
+
+    :80|
+    :h |
+
+
 
 search/replace with substitution
 ----
