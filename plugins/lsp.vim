@@ -33,3 +33,5 @@ Plug 'folke/trouble.nvim'  " https://github.com/folke/trouble.nvim
 
 " Keybindings
 noremap <leader>f :luado vim.lsp.buf.format()<CR>
+nmap <silent> [g :luado vim.lsp.diagnostic.goto_prev()
+nmap <silent> ]g :luado vim.lsp.diagnostic.goto_next()
