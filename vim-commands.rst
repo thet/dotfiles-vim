@@ -189,12 +189,19 @@ There are these types of registers::
 
 sort for blocks
 https://superuser.com/a/752821/404355
+
+This worked for me::
+
+  :g/<utility/,/\/>/s/\n/§
+  :%sort
+  %s/§/\r/g
+
+
 ::
 
     :g/def/,/end/s/\n/§
     :%sort
     :g/def/s/§/\r
-
 
 ::
 
