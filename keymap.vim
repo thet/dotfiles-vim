@@ -69,13 +69,6 @@ noremap N Nzz
 "" thanks bairu from #vim!
 nnoremap <Del> "_x
 
-"" paste selected text into command line
-"" http://stackoverflow.com/questions/4878980/vim-insert-selected-text-into-command-line
-"" http://stackoverflow.com/a/8750499/1130358
-nnoremap ; y:<C-r>"<C-b>
-vnoremap ; y:<C-r>"<C-b>
-
-
 "" clipboard copy/paste
 " copy selection or line
 noremap 1 "+yy
@@ -87,10 +80,16 @@ noremap @ "+P
 noremap 3 "+d
 
 
+"" paste selected text into command line
+"" http://stackoverflow.com/questions/4878980/vim-insert-selected-text-into-command-line
+"" http://stackoverflow.com/a/8750499/1130358
+nnoremap ; y:<C-r>"<C-b>
+vnoremap ; y:<C-r>"<C-b>
+
 " copy filename/path to clipboard
 " http://vim.wikia.com/wiki/Copy_filename_to_clipboard
-noremap ,cs :let @+=expand("%")<CR>
-noremap ,cl :let @+=expand("%:p")<CR>
+noremap <leader>cs :let @+=expand("%")<CR>
+noremap <leader>cl :let @+=expand("%:p")<CR>
 
 
 "" <leader>` MAPPINGS
