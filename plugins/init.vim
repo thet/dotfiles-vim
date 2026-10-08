@@ -21,7 +21,7 @@ Plug 'wesQ3/vim-windowswap'  " https://github.com/wesQ3/vim-windowswap
 Plug 'junegunn/gv.vim'  " https://github.com/junegunn/gv.vim
 Plug 'tpope/vim-rhubarb'  " https://github.com/tpope/vim-rhubarb
 " Plug 'cohama/agit.vim'  " https://github.com/cohama/agit.vim
-
+" Plug 'gregsexton/gitv'  " https://github.com/gregsexton/gitv
 
 " Against indentation annoyances
 Plug 'tpope/vim-sleuth'  " https://github.com/tpope/vim-sleuth
